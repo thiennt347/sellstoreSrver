@@ -19,7 +19,7 @@ import com.sellproducts.thiennt.sellstoreSever.model.Token;
     }
 
     private void uptoken(String tokenfresh) {
-
+    //get token
         FirebaseDatabase db =FirebaseDatabase.getInstance();
         DatabaseReference tokens = db.getReference("Tokens");
         Token token = new Token(tokenfresh,true); //fasle, vi token gui tu clien app
