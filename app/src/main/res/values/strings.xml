@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ManagerStore</string>
+    <string name="sologan">Learn by doing. Always play with the code while learning
+        Grasp the fundamentals for long-term benefits
+        Code by hand. It sharpens proficiency and you’ll need it to get a job
+        Ask for help. You’ll need it
+        Seek out more online resources. There’s a wealth of content
+        Don’t just read the sample code. Tinker with it!
+        Take breaks when debugging.
+    </string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tracking_oder">TrackingOder</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_tracking_order">Map</string>
+    <string name="title_activity_view_all_order">Map</string>
+</resources>

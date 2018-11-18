@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sellproducts.thiennt.sellstoreSever">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGEAD" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/clerk"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/clerk"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".TrackingOrder"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_tracking_order" />
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Login"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Products_list"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Order_status"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".OderDetail"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".BannerActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ShipperManegerment"
+            android:screenOrientation="portrait"/>
+
+        <service android:name=".Service.MyFirebaseIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Service.MyFirebaseMessaging">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".SendMessage"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Report"
+            android:screenOrientation="landscape"
+            />
+    </application>
+
+</manifest>
